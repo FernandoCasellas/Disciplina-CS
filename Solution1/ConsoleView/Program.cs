@@ -123,10 +123,9 @@ namespace ConsoleView
             Professor p = new Professor();
 
             Console.WriteLine("----------------Dados Professor------------------ "); // get
-
+            Console.WriteLine("");
             Console.Write("Digite o nome do Professor: ");
             p.Nome = Console.ReadLine();
-
             Console.Write("Digite a Matricula do Professor: ");
             p.Matricula = int.Parse(Console.ReadLine());
             Console.WriteLine("");
@@ -146,7 +145,6 @@ namespace ConsoleView
             Console.WriteLine("------------------IMPRESSÃO-------------------"); // get
             Console.WriteLine("");
             Console.WriteLine("Professor: " + p.Nome); // get
-
             Console.WriteLine("Matricula: " + p.Matricula); // get
             Console.WriteLine("");
             //Console.WriteLine("Disciplina: " + p.Disciplina); // get
@@ -162,7 +160,7 @@ namespace ConsoleView
             Disciplina d = new Disciplina();
 
             Console.WriteLine("----------------Cadastro Disciplina------------------ "); // get
-
+            Console.WriteLine("");
             Console.Write("Digite o ID da Disciplina: ");
             d.id = int.Parse(Console.ReadLine());
             Console.WriteLine("");
