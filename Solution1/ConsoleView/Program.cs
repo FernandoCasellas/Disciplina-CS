@@ -83,19 +83,17 @@ namespace ConsoleView
 
             Aluno a = new Aluno();
 
-            Console.WriteLine("------------------Cadastro Aluno-----------------");
+            Console.WriteLine("------------------CADASTRO DADOS ALUNOS-----------------");
             Console.WriteLine("");
             Console.Write("Digite o nome do aluno: ");
-            Console.WriteLine("");
+           
             a.Nome = Console.ReadLine();
-
-    
+            Console.WriteLine("");
             Console.Write("Digite a Matricula do aluno: ");
             a.Matricula = int.Parse(Console.ReadLine());
+            Console.WriteLine("");
 
-
-           // Console.Write("Digite UMA DISCIPLINA do aluno: ");
-            //a.Disciplina = Console.ReadLine();
+            
             return a;
         }
 
@@ -104,14 +102,13 @@ namespace ConsoleView
         private static void ImprimeDadosAluno(Aluno a)
         {
 
-            Console.WriteLine("----------------Dados Aluno------------------ " + a.Nome); // get
+            Console.WriteLine("----------------IMPRESSÃO DADOS ALUNO------------------ "); // get
             Console.WriteLine("");
             Console.WriteLine("Aluno: " + a.Nome); // get
-
+            Console.WriteLine("");
             Console.WriteLine("Matricula: " + a.Matricula); // get
             Console.WriteLine("");
 
-            //Console.WriteLine("Disciplina: " + a.Disciplina); // get
 
 //------------------------------------FIM CADASTRO ALUNO------------------------------------------
 
@@ -121,18 +118,17 @@ namespace ConsoleView
         private static Professor CadastrarProfessor()
         {
             Professor p = new Professor();
-
-            Console.WriteLine("----------------Dados Professor------------------ "); // get
+            Console.WriteLine("");
+            Console.WriteLine("----------------CADASTRO DADOS PROFESSOR------------------ "); // get
             Console.WriteLine("");
             Console.Write("Digite o nome do Professor: ");
             p.Nome = Console.ReadLine();
+            Console.WriteLine("");
             Console.Write("Digite a Matricula do Professor: ");
             p.Matricula = int.Parse(Console.ReadLine());
             Console.WriteLine("");
 
 
-            //    Console.Write("Digite UMA DISCIPLINA do Profesor: ");
-            //   p.Disciplina = Console.ReadLine();
             return p;
         }
 
@@ -141,13 +137,14 @@ namespace ConsoleView
         private static void ImprimeDadosProfessor(Professor p)
         {
 
-
-            Console.WriteLine("------------------IMPRESSÃO-------------------"); // get
+            Console.WriteLine("");
+            Console.WriteLine("------------------IMPRESSÃO CADASTRO PROFESSORES-------------------"); // get
             Console.WriteLine("");
             Console.WriteLine("Professor: " + p.Nome); // get
+            Console.WriteLine("");
             Console.WriteLine("Matricula: " + p.Matricula); // get
             Console.WriteLine("");
-            //Console.WriteLine("Disciplina: " + p.Disciplina); // get
+
 
         }
 
@@ -158,20 +155,16 @@ namespace ConsoleView
         private static Disciplina CadastrarDisciplina()
         {
             Disciplina d = new Disciplina();
-
-            Console.WriteLine("----------------Cadastro Disciplina------------------ "); // get
+            Console.WriteLine("");
+            Console.WriteLine("----------------Cadastro das Disciplina------------------ "); // get
             Console.WriteLine("");
             Console.Write("Digite o ID da Disciplina: ");
             d.id = int.Parse(Console.ReadLine());
             Console.WriteLine("");
-
             Console.Write("Digite o nome da Disciplina Cadastrada: ");
             d.Nome = Console.ReadLine();
 
             
-
-            //    Console.Write("Digite UMA DISCIPLINA do Profesor: ");
-            //   p.Disciplina = Console.ReadLine();
             return d;
         }
 
@@ -181,14 +174,13 @@ namespace ConsoleView
         {
 
 
-            Console.WriteLine("------------------Dados Disciplina-------------------"); // get
+            Console.WriteLine("------------------Imprime Dados Disciplina-------------------"); // get
             Console.WriteLine("");
             Console.WriteLine("ID Disciplina: " + d.id); // get
-
+            Console.WriteLine("");
             Console.WriteLine("Disciplina: " + d.Nome); // get
             Console.WriteLine("");
-            //Console.WriteLine("Disciplina: " + p.Disciplina); // get
-
+            
         }
 
 
